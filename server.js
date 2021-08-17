@@ -39,10 +39,9 @@ server.get('/test', (req, res) => {
     res.send('It\'s Working!!')
 })
 
-
-
-
-
+server.get('/*', (req, res) => {
+    res.send('Write another city')
+})
 
 
 server.listen(PORT, () => {
